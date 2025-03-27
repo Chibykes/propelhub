@@ -4,24 +4,24 @@ import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
   return (
-    <section className="relative space-y-24 px-10 py-10">
+    <section className="relative space-y-24 px-6 py-10 sm:px-10">
       <div className="mx-auto flex w-full max-w-7xl flex-col space-y-10">
         <div className="max-w-2xl space-y-2">
           <Badge
             text="How It Works"
             className="inline-flex rounded-lg border-neutral-200 bg-neutral-50 text-sm text-black/90"
           />
-          <h1 className="mt-4 text-5xl leading-[100%] font-semibold tracking-[-3px] text-gray-900">
+          <h1 className="mt-4 text-3xl leading-[120%] font-semibold tracking-[-1px] text-gray-900 sm:text-5xl sm:leading-[100%] sm:tracking-[-3px]">
             Your Path to Business Growth
-            <br /> Made Simple
+            <br className="hidden sm:block" /> Made Simple
           </h1>
-          <p className="mt-6 leading-[140%] tracking-[-1px]">
+          <p className="mt-4 leading-[140%] tracking-[-0.5px] sm:mt-6 sm:tracking-[-1px]">
             Start your journey in these simple 5 steps
           </p>
 
-          <a href="#" className="mt-6 inline-block">
+          <a href="#" className="mt-4 inline-block sm:mt-6">
             <Button
-              className="cursor-pointer rounded-sm px-8 py-6 font-semibold text-white"
+              className="cursor-pointer rounded-sm px-6 py-4 font-semibold text-white sm:px-8 sm:py-6"
               variant={"default"}
             >
               Get started
@@ -30,7 +30,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="flex flex-col gap-8">
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
             <Procedure
               heading={"Create an Account"}
               subheading={"Sign up and complete your business profile"}
@@ -62,13 +62,13 @@ const HowItWorks = () => {
               />
             </Procedure>
           </div>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <Procedure
               heading={"Track & Manage Applications"}
               subheading={"Get real-time updates."}
             >
               <img
-                className="absolute bottom-0 mx-auto h-auto w-[calc(100%-3rem)] object-cover"
+                className="absolute bottom-0 mx-auto h-auto w-[calc(100%-1.5rem)] object-cover sm:w-[calc(100%-3rem)]"
                 src="/procedures/procedure4.png"
                 alt="Procedure"
               />

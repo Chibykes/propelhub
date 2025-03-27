@@ -6,21 +6,21 @@ import TestimonialCard from "@/components/testimonial-card";
 const SuccessStories = () => {
   return (
     <section className="bg-primary relative space-y-10 overflow-hidden py-24">
-      <div className="px-10">
-        <div className="mx-auto flex w-full max-w-7xl flex-col space-x-10">
+      <div className="px-4 sm:px-6 lg:px-10">
+        <div className="mx-auto flex w-full max-w-7xl flex-col space-x-0 lg:space-x-10">
           <div className="max-w-3xl space-y-2">
             <Badge text="Testimonials" />
-            <h1 className="text-5xl font-semibold text-white">
+            <h1 className="text-3xl font-semibold text-white sm:text-4xl lg:text-5xl">
               Real Success Stories from
               <br /> Entrepreneurs Like You
             </h1>
-            <p className="mt-4 text-white">
+            <p className="mt-4 text-sm text-white sm:text-base">
               Join thousands of entrepreneurs who trust PropelHub!
             </p>
 
             <a href={"#"} className="mt-8 inline-block">
               <Button
-                className="cursor-pointer rounded-sm px-8 py-6 font-semibold text-white"
+                className="cursor-pointer rounded-sm px-6 py-4 font-semibold text-white sm:px-8 sm:py-6"
                 variant={"default"}
               >
                 Get started
@@ -30,9 +30,9 @@ const SuccessStories = () => {
         </div>
       </div>
 
-      <div className="overflow-auto px-10 scrollbar-none">
+      <div className="scrollbar-none overflow-auto px-4 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
-          <div className="flex w-fit flex-nowrap items-center space-x-10 pr-10">
+          <div className="flex w-fit flex-nowrap items-center space-x-4 pr-4 sm:space-x-6 sm:pr-6 lg:space-x-10 lg:pr-10">
             {TESTIMONIALS.map((testimonial) => (
               <TestimonialCard {...testimonial} />
             ))}

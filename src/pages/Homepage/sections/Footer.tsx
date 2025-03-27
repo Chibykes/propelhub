@@ -9,27 +9,29 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative space-y-10 overflow-hidden bg-white px-10 py-10">
+    <footer className="relative space-y-10 overflow-hidden bg-white px-6 py-10 md:px-10">
       <div className="divide mx-auto flex w-full max-w-7xl flex-col divide-y divide-gray-200">
         {/* Subscribe */}
-        <div className="flex justify-between gap-4 py-10">
-          <div className="w-full max-w-sm space-y-2">
-            <h1 className="text-2xl font-bold">Join our newsletter</h1>
-            <p className="">
+        <div className="flex flex-col gap-4 py-10 md:flex-row md:justify-between">
+          <div className="w-full space-y-2 md:max-w-sm">
+            <h1 className="text-xl font-bold md:text-2xl">
+              Join our newsletter
+            </h1>
+            <p className="text-sm md:text-base">
               Get all the latest PropelHub news
               <br /> delivered to your inbox.
             </p>
           </div>
 
-          <div className="flex w-full max-w-md items-start space-x-2">
+          <div className="flex w-full flex-col items-start space-y-2 md:max-w-md md:flex-row md:items-center md:space-y-0 md:space-x-2">
             <Input
               type="email"
-              className="py-6 shadow-none"
+              className="py-4 shadow-none md:py-6"
               placeholder="Email address"
             />
             <Button
               type="submit"
-              className="px-6 py-6 text-white"
+              className="w-full px-6 py-4 text-white md:w-auto md:py-6"
               variant={"default"}
             >
               Subscribe
@@ -39,7 +41,7 @@ const Footer = () => {
 
         {/* About */}
         <div className="py-10">
-          <p className="text-base text-gray-700">
+          <p className="text-sm text-gray-700 md:text-base">
             PropelHub is a business growth and financial solutions platform that
             connects users to financial institutions, mentors, and investors. We
             do not directly issue loans, grants, or investments but facilitate
@@ -58,24 +60,26 @@ const Footer = () => {
             thrive in today’s competitive market. Whether you’re applying for
             funding, refining your strategy, or expanding into new markets,
             remember that persistence, knowledge, and the right support system
-            are key to success.The future of your business starts today—Take the
-            next step with PropelHub!
+            are key to success. The future of your business starts today—Take
+            the next step with PropelHub!
           </p>
         </div>
 
         <div className="py-10">
           <div className="flex flex-col gap-8">
-            <div className="flex justify-between gap-4">
+            <div className="flex flex-col gap-4 md:flex-row md:justify-between">
               <div className="flex flex-col gap-4">
                 <div className="">
                   <img
                     src="/logo.png"
                     alt="Propelhub"
-                    className="h-10 w-auto"
+                    className="h-8 w-auto md:h-10"
                   />
                 </div>
-                <p className="">© 2025 PropelHub. All rights reserved.</p>
-                <div className="">
+                <p className="text-sm md:text-base">
+                  © 2025 PropelHub. All rights reserved.
+                </p>
+                <div className="text-sm md:text-base">
                   <p className="">30 wall Str, 8Th FL </p>
                   <p className="">New York, NY 10005 </p>
                   <p className="">39 Uyo Str. Off Stadium RD. </p>
@@ -85,32 +89,32 @@ const Footer = () => {
 
               <div className="flex gap-2">
                 <a
-                  className="bg-primary-button grid h-10 w-10 place-content-center rounded-full"
+                  className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
                 >
-                  <FaFacebook className="h-5 w-5 text-white" />
+                  <FaFacebook className="h-4 w-4 text-white md:h-5 md:w-5" />
                 </a>
                 <a
-                  className="bg-primary-button grid h-10 w-10 place-content-center rounded-full"
+                  className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
                 >
-                  <FaTwitter className="h-5 w-5 text-white" />
+                  <FaTwitter className="h-4 w-4 text-white md:h-5 md:w-5" />
                 </a>
                 <a
-                  className="bg-primary-button grid h-10 w-10 place-content-center rounded-full"
+                  className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
                 >
-                  <FaInstagram className="h-5 w-5 text-white" />
+                  <FaInstagram className="h-4 w-4 text-white md:h-5 md:w-5" />
                 </a>
                 <a
-                  className="bg-primary-button grid h-10 w-10 place-content-center rounded-full"
+                  className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
                 >
-                  <FaLinkedinIn className="h-5 w-5 text-white" />
+                  <FaLinkedinIn className="h-4 w-4 text-white md:h-5 md:w-5" />
                 </a>
               </div>
             </div>
-            <div className="flex w-full gap-8">
+            <div className="flex flex-col gap-4 md:flex-row md:gap-8">
               <a href="" className="text-sm font-medium text-gray-600">
                 Terms of Service
               </a>

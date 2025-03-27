@@ -14,8 +14,8 @@ const brands = [
 
 const Brands = () => {
   return (
-    <section className="relative space-y-24 px-10 py-6">
-      <div className="flex gap-12 animate-scroll">
+    <section className="relative space-y-24 overflow-hidden px-10 py-6">
+      <div className="animate-scroll mx-auto flex max-w-7xl gap-12">
         {brands.map((brand, index) => (
           <img src={brand} alt={`Brand ${index + 1}`} className="h-20" />
         ))}

@@ -14,20 +14,27 @@ const FAQCard = ({ question, answer }: FAQCardProps) => {
 
   return (
     <div className="w-full">
-      <div className="space-y-4 px-8 py-10">
-        <div className="flex justify-between gap-4">
-          <h1 className="text-2xl font-medium text-white">{question}</h1>
+      <div className="space-y-4 px-4 py-6 sm:px-8 sm:py-10">
+        <div className="flex justify-between gap-2 sm:gap-4">
+          <h1 className="text-lg font-medium text-white sm:text-2xl">
+            {question}
+          </h1>
           <button
             className="flex cursor-pointer items-start"
             onClick={() => setShowDescription(!showDescription)}
           >
-            <X className={cn("h-8 w-8 text-white duration-200", rotate)} />
+            <X
+              className={cn(
+                "h-6 w-6 text-white duration-200 sm:h-8 sm:w-8",
+                rotate,
+              )}
+            />
           </button>
         </div>
 
         <p
           className={cn(
-            "overflow-hidden text-lg font-normal text-white duration-200",
+            "overflow-hidden text-base font-normal text-white duration-200 sm:text-lg",
             maxHeight,
           )}
           style={{ maxHeight: showDescription ? "100px" : "0px" }}
