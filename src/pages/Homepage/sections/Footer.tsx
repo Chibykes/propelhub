@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { BsBuildingsFill } from "react-icons/bs";
 import {
   FaFacebook,
   FaInstagram,
@@ -82,7 +83,7 @@ const Footer = () => {
                 </p>
                 <div className="text-sm md:text-base">
                   <div className="flex items-start gap-2">
-                    <FaMapMarkerAlt className="text-primary-button mt-[5px]" />
+                    <BsBuildingsFill className="text-primary-button mt-[5px]" />
 
                     <div className="">
                       <p className="">30 wall Str, 8Th FL </p>
