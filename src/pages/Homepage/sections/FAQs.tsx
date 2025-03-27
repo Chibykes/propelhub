@@ -17,7 +17,7 @@ const FAQs = () => {
           </p>
         </div>
 
-        <div className="flex flex-col space-y-6 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
+        <div className="flex flex-col space-y-6 sm:gap-8 sm:space-y-0">
           {FREQUENTLY_ASKED_QUESTIONS.map((faq) => (
             <FAQCard {...faq} />
           ))}
