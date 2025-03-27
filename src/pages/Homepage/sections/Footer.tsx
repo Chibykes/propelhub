@@ -4,6 +4,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedinIn,
+  FaMapMarkerAlt,
   FaTwitter,
 } from "react-icons/fa";
 
@@ -80,10 +81,22 @@ const Footer = () => {
                   © 2025 PropelHub. All rights reserved.
                 </p>
                 <div className="text-sm md:text-base">
-                  <p className="">30 wall Str, 8Th FL </p>
-                  <p className="">New York, NY 10005 </p>
-                  <p className="">39 Uyo Str. Off Stadium RD. </p>
-                  <p className="">Portharcourt, Rivers 500101, NIG</p>
+                  <div className="flex items-start gap-2">
+                    <FaMapMarkerAlt className="text-primary-button mt-[5px]" />
+
+                    <div className="">
+                      <p className="">30 wall Str, 8Th FL </p>
+                      <p className="">New York, NY 10005 </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <FaMapMarkerAlt className="text-primary-button mt-[5px]" />
+
+                    <div className="">
+                      <p className="">39 Uyo Str. Off Stadium RD. </p>
+                      <p className="">Portharcourt, Rivers 500101, NIG</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
