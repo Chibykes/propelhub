@@ -155,6 +155,7 @@ const Footer = () => {
               className="flex flex-col gap-4 md:flex-row md:gap-8"
               data-aos="fade-up"
               data-aos-delay="2000"
+              data-aos-anchor-placement="top-bottom"
             >
               <a href="" className="text-sm font-medium text-gray-600">
                 Terms of Service

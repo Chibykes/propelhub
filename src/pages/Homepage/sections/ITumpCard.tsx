@@ -1,16 +1,6 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 import { Button } from "@/components/ui/button";
 
 const ITumpCard = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
-
   return (
     <section className="relative space-y-24 bg-neutral-100 px-6 py-16 sm:px-10 sm:py-20">
       <div

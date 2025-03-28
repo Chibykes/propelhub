@@ -1,21 +1,11 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 import Badge from "@/components/badge";
 import FeatureSection from "@/components/feature-section";
 import { Button } from "@/components/ui/button";
 import { FEATURES } from "../constants/features";
 
 const KeyFeatures = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
-
   return (
-    <>
+    <section>
       <section
         className="relative space-y-12 px-6 py-8 sm:space-y-24 sm:px-10 sm:py-10"
         data-aos="fade-up"
@@ -71,12 +61,12 @@ const KeyFeatures = () => {
         <div
           key={index}
           data-aos="fade-up"
-          data-aos-delay={`${200 + index * 300}`} // Stagger animations for each feature
+          data-aos-delay={`${200 + index * 100}`} // Stagger animations for each feature
         >
           <FeatureSection {...feature} />
         </div>
       ))}
-    </>
+    </section>
   );
 };
 

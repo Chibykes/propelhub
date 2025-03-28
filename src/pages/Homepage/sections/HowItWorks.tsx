@@ -1,18 +1,8 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 import Badge from "@/components/badge";
 import Procedure from "@/components/procedure";
 import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
-
   return (
     <section className="relative space-y-24 px-6 py-10 sm:px-10">
       <div

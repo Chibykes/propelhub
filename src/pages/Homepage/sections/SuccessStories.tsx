@@ -1,19 +1,9 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 import Badge from "@/components/badge";
 import { Button } from "@/components/ui/button";
 import { TESTIMONIALS } from "../constants/testimonials";
 import TestimonialCard from "@/components/testimonial-card";
 
 const SuccessStories = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
-
   return (
     <section className="bg-primary relative space-y-10 overflow-hidden py-24">
       <div className="px-4 sm:px-6 lg:px-10">

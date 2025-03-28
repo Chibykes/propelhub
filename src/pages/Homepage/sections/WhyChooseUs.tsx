@@ -1,17 +1,7 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 import Badge from "@/components/badge";
 import { Button } from "@/components/ui/button";
 
 const WhyChooseUs = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
-
   return (
     <section className="relative space-y-24 px-4 py-4 sm:px-10 sm:py-10">
       <div

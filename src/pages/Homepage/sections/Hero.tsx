@@ -1,19 +1,9 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 import Badge from "@/components/badge";
 import { Navbar } from "@/components/navbar";
 
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
-
   return (
-    <section className="before:bg-primary relative isolate space-y-24 px-4 py-6 pb-12 before:absolute before:inset-0 before:z-[-1] before:h-3/4 before:w-full before:content-[''] sm:px-10">
+    <section className="before:bg-primary relative isolate space-y-24 px-4 py-6 pb-12 before:absolute before:inset-0 before:z-[-1] before:h-3/4 before:min-h-[80vh] before:w-full before:content-[''] sm:px-10 sm:before:min-h-screen">
       <Navbar />
       <div
         className="flex h-full flex-col items-center justify-center gap-4 px-4 text-center sm:px-0"
