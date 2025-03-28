@@ -27,7 +27,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <main>
+    <main className="overflow-hidden">
       <Hero />
       <Brands />
       <WhyChooseUs />
