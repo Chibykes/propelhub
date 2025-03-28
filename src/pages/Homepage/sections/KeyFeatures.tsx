@@ -71,7 +71,7 @@ const KeyFeatures = () => {
         <div
           key={index}
           data-aos="fade-up"
-          data-aos-delay={`${200 + index * 100}`} // Stagger animations for each feature
+          data-aos-delay={`${200 + index * 300}`} // Stagger animations for each feature
         >
           <FeatureSection {...feature} />
         </div>
