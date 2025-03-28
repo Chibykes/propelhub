@@ -43,11 +43,11 @@ const Hero = () => {
       </div>
 
       <figure
-        className="bg-secondary mx-auto w-full max-w-full rounded-xl p-4 sm:max-w-5xl sm:p-8"
+        className="x-bg-secondary mx-auto w-full max-w-full rounded-xl p-4 sm:max-w-5xl sm:p-8"
         data-aos="fade-up"
         data-aos-delay="800"
       >
-        <img src="/hero.png" alt="Hero" className="w-full" />
+        <img src="/hero2.png" alt="Hero" className="w-full" />
       </figure>
     </section>
   );
