@@ -1,10 +1,27 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import { Button } from "@/components/ui/button";
 
 const ITumpCard = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <section className="relative space-y-24 bg-neutral-100 px-6 py-16 sm:px-10 sm:py-20">
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center space-y-10 sm:flex-row sm:space-y-0 sm:space-x-10">
-        <div className="w-full space-y-4 py-6 sm:w-1/2 sm:py-10">
+      <div
+        className="mx-auto flex w-full max-w-7xl flex-col items-center space-y-10 sm:flex-row sm:space-y-0 sm:space-x-10"
+        data-aos="fade-up"
+      >
+        <div
+          className="w-full space-y-4 py-6 sm:w-1/2 sm:py-10"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <h1 className="text-3xl font-semibold sm:text-5xl">
             Secure your Itump Black Business Card
           </h1>
@@ -27,6 +44,8 @@ const ITumpCard = () => {
           src={"/itump-card.png"}
           alt=""
           className="h-auto w-full sm:h-full sm:w-1/2"
+          data-aos="fade-left"
+          data-aos-delay="400"
         />
       </div>
     </section>

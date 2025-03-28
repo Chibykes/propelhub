@@ -1,11 +1,28 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import Badge from "@/components/badge";
 import { Button } from "@/components/ui/button";
 
 const WhyChooseUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <section className="relative space-y-24 px-4 py-4 sm:px-10 sm:py-10">
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between space-y-10 lg:flex-row">
-        <div className="w-full max-w-2xl space-y-8">
+      <div
+        className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between space-y-10 lg:flex-row"
+        data-aos="fade-up"
+      >
+        <div
+          className="w-full max-w-2xl space-y-8"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <div className="space-y-2">
             <Badge
               text="Why Choose Us"
@@ -18,36 +35,44 @@ const WhyChooseUs = () => {
             </h1>
           </div>
 
-          <div className="tracking[-1px] leading-[140%]">
-            <p className="">
+          <div
+            className="tracking[-1px] leading-[140%]"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            <p>
               We believe that every entrepreneur deserves the right resources,
               funding, and expertise to succeed. PropelHub makes this possible
               by connecting you to:
             </p>
 
             <ul className="mt-4 ml-2 list-inside list-disc space-y-4 marker:text-xl marker:leading-[125%]">
-              <li className="m-0">
+              <li>
                 Fast & Flexible Business Loans – Access financing from ₦500K to
                 ₦300M+
               </li>
-              <li className="m-0">
+              <li>
                 Expert Mentorship – Gain insights from top industry leaders
               </li>
-              <li className="m-0">
+              <li>
                 Investment & Grant Access – Secure funding tailored to your
                 business
               </li>
-              <li className="m-0">
+              <li>
                 Business Expansion Tools – Enter new markets with confidence
               </li>
-              <li className="m-0">
+              <li>
                 Essential Business Services – Registration, tax compliance, and
                 more
               </li>
             </ul>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div
+            className="flex items-center space-x-4"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             <a href="#">
               <Button
                 className="cursor-pointer rounded-sm px-6 py-4 font-semibold text-white sm:px-8 sm:py-6"
@@ -66,7 +91,11 @@ const WhyChooseUs = () => {
             </a>
           </div>
         </div>
-        <div className="w-full max-w-xl">
+        <div
+          className="w-full max-w-xl"
+          data-aos="fade-left"
+          data-aos-delay="800"
+        >
           <img
             src="/why-choose-us.png"
             alt="Why Choose Us"

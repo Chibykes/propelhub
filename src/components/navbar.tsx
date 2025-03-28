@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const HERO_NAV_LINKS = [
   { name: "Home", href: "#" },
@@ -11,6 +11,34 @@ const HERO_NAV_LINKS = [
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 640) {
+        setIsMobile(false);
+        setIsMenuOpen(false);
+        return;
+      }
+
+      setIsMobile(true);
+    };
+
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <nav className="flex w-full flex-wrap items-center justify-between rounded-xl bg-white px-4 py-4 sm:flex-nowrap sm:px-10 sm:py-6">
       <img src="/logo.png" alt="Propelhub" className="h-6 sm:h-8" />
@@ -44,8 +72,12 @@ export const Navbar = () => {
       </button>
       <div
         className={cn(
-          isMenuOpen ? "flex" : "hidden",
-          "w-full flex-col items-center space-y-4 sm:flex sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-8",
+          isMobile
+            ? isMenuOpen
+              ? "mt-4 max-h-screen opacity-100"
+              : "max-h-0 opacity-0"
+            : "max-h-screen opacity-100",
+          "flex w-full flex-col items-center space-y-4 transition-all duration-300 ease-in-out sm:flex sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-8",
         )}
       >
         {HERO_NAV_LINKS.map((link) => (

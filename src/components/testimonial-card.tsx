@@ -1,4 +1,3 @@
-
 interface TestimonialCardProps {
   name: string;
   role: string;
@@ -13,7 +12,7 @@ const TestimonialCard = ({
   testimonial,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-secondary flex shrink-0 h-[520px] w-[510px] flex-col space-y-4 rounded-lg p-10">
+    <div className="bg-secondary flex h-[520px] w-[350px] shrink-0 flex-col space-y-4 rounded-lg p-10 sm:w-[510px]">
       <p className="flex-1 text-xl text-white">{testimonial}</p>
 
       <div className="flex flex-col space-y-2">
