@@ -14,12 +14,12 @@ const Footer = () => {
     <footer className="relative space-y-10 overflow-hidden bg-white px-6 py-10 md:px-10">
       <div
         className="divide mx-auto flex w-full max-w-7xl flex-col divide-y divide-gray-200"
-        data-aos="fade-up"
+        data-aos="fade-zoom-in"
       >
         {/* Subscribe */}
         <div
           className="flex flex-col gap-4 py-10 md:flex-row md:justify-between"
-          data-aos="fade-up"
+          data-aos="fade-zoom-in"
           data-aos-delay="200"
         >
           <div className="w-full space-y-2 md:max-w-sm">
@@ -34,7 +34,7 @@ const Footer = () => {
 
           <div
             className="flex w-full flex-col items-start space-y-2 md:max-w-md md:flex-row md:items-center md:space-y-0 md:space-x-2"
-            data-aos="fade-up"
+            data-aos="fade-zoom-in"
             data-aos-delay="400"
           >
             <Input
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         {/* About */}
-        <div className="py-10" data-aos="fade-up" data-aos-delay="600">
+        <div className="py-10" data-aos="fade-zoom-in" data-aos-delay="600">
           <p className="text-sm text-gray-700 md:text-base">
             PropelHub is a business growth and financial solutions platform that
             connects users to financial institutions, mentors, and investors. We
@@ -78,11 +78,11 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="py-10" data-aos="fade-up" data-aos-delay="800">
+        <div className="py-10" data-aos="fade-zoom-in" data-aos-delay="800">
           <div className="flex flex-col gap-8">
             <div
               className="flex flex-col gap-4 md:flex-row md:justify-between"
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="1000"
             >
               <div className="flex flex-col gap-4">
@@ -120,7 +120,7 @@ const Footer = () => {
                 <a
                   className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
-                  data-aos="fade-up"
+                  data-aos="fade-zoom-in"
                   data-aos-delay="1200"
                 >
                   <FaFacebook className="h-4 w-4 text-white md:h-5 md:w-5" />
@@ -128,7 +128,7 @@ const Footer = () => {
                 <a
                   className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
-                  data-aos="fade-up"
+                  data-aos="fade-zoom-in"
                   data-aos-delay="1400"
                 >
                   <FaTwitter className="h-4 w-4 text-white md:h-5 md:w-5" />
@@ -136,7 +136,7 @@ const Footer = () => {
                 <a
                   className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
-                  data-aos="fade-up"
+                  data-aos="fade-zoom-in"
                   data-aos-delay="1600"
                 >
                   <FaInstagram className="h-4 w-4 text-white md:h-5 md:w-5" />
@@ -144,7 +144,7 @@ const Footer = () => {
                 <a
                   className="bg-primary-button grid h-8 w-8 place-content-center rounded-full md:h-10 md:w-10"
                   href=""
-                  data-aos="fade-up"
+                  data-aos="fade-zoom-in"
                   data-aos-delay="1800"
                 >
                   <FaLinkedinIn className="h-4 w-4 text-white md:h-5 md:w-5" />
@@ -153,7 +153,7 @@ const Footer = () => {
             </div>
             <div
               className="flex flex-col gap-4 md:flex-row md:gap-8"
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="2000"
               data-aos-anchor-placement="top-bottom"
             >

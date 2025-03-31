@@ -8,16 +8,16 @@ const KeyFeatures = () => {
     <section>
       <section
         className="relative space-y-12 px-6 py-8 sm:space-y-24 sm:px-10 sm:py-10"
-        data-aos="fade-up"
+        data-aos="fade-zoom-in"
       >
         <div
           className="mx-auto flex w-full max-w-7xl flex-col space-y-8 sm:space-y-10"
-          data-aos="fade-up"
+          data-aos="fade-zoom-in"
           data-aos-delay="200"
         >
           <div
             className="mx-auto max-w-xl space-y-4 text-center sm:max-w-2xl sm:space-y-2"
-            data-aos="fade-right"
+            data-aos="fade-zoom-in"
             data-aos-delay="400"
           >
             <Badge
@@ -26,7 +26,7 @@ const KeyFeatures = () => {
             />
             <h1
               className="mt-4 text-3xl leading-[120%] font-semibold tracking-[-1px] text-gray-900 sm:mt-4 sm:text-5xl sm:leading-[100%] sm:tracking-[-3px]"
-              data-aos="fade-right"
+              data-aos="fade-zoom-in"
               data-aos-delay="600"
             >
               Unlock Powerful Tools <br className="hidden sm:block" /> Designed
@@ -34,7 +34,7 @@ const KeyFeatures = () => {
             </h1>
             <p
               className="mt-2 leading-[140%] tracking-[-0.5px] sm:mt-4 sm:tracking-[-1px]"
-              data-aos="fade-right"
+              data-aos="fade-zoom-in"
               data-aos-delay="800"
             >
               Explore our wide range of offerings designed to boost your growth.
@@ -43,7 +43,7 @@ const KeyFeatures = () => {
             <a
               href="#"
               className="mt-4 inline-block sm:mt-6"
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="1000"
             >
               <Button
@@ -60,7 +60,7 @@ const KeyFeatures = () => {
       {FEATURES.map((feature, index) => (
         <div
           key={index}
-          data-aos="fade-up"
+          data-aos="fade-zoom-in"
           data-aos-delay={`${200 + index * 100}`} // Stagger animations for each feature
         >
           <FeatureSection {...feature} />

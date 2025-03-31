@@ -6,11 +6,11 @@ const WhyChooseUs = () => {
     <section className="relative space-y-24 px-4 py-4 sm:px-10 sm:py-10">
       <div
         className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between space-y-10 lg:flex-row"
-        data-aos="fade-up"
+        data-aos="fade-zoom-in"
       >
         <div
           className="w-full max-w-2xl space-y-8"
-          data-aos="fade-right"
+          data-aos="fade-zoom-in"
           data-aos-delay="200"
         >
           <div className="space-y-2">
@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
 
           <div
             className="tracking[-1px] leading-[140%]"
-            data-aos="fade-right"
+            data-aos="fade-zoom-in"
             data-aos-delay="400"
           >
             <p>
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
 
           <div
             className="flex items-center space-x-4"
-            data-aos="fade-right"
+            data-aos="fade-zoom-in"
             data-aos-delay="600"
           >
             <a href="#">
@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
         </div>
         <div
           className="w-full max-w-xl"
-          data-aos="fade-left"
+          data-aos="fade-zoom-in"
           data-aos-delay="800"
         >
           <img

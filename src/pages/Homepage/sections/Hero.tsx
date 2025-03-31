@@ -7,21 +7,22 @@ const Hero = () => {
       <Navbar />
       <div
         className="flex h-full flex-col items-center justify-center gap-4 px-4 text-center sm:px-0"
-        data-aos="fade-up"
+        data-aos="fade-zoom-in"
+        data-aos-delay="200"
       >
         <Badge text="Empowering Businesses, Enabling Growth" />
         <h1
           className="max-w-7xl text-3xl font-bold text-white sm:text-6xl"
-          data-aos="fade-up"
-          data-aos-delay="200"
+          // data-aos="fade-up"
+          // data-aos-delay="200"
         >
           Your All-In-One Gateway to Business Growth,
           <br className="hidden sm:block" /> Funding & Mentorship
         </h1>
         <p
           className="mt-4 max-w-3xl text-sm text-white sm:text-lg"
-          data-aos="fade-up"
-          data-aos-delay="400"
+          // data-aos="fade-up"
+          // data-aos-delay="400"
         >
           Get access to business loans, expert mentorship, investment
           opportunities, and premium financial services—all in one place.
@@ -30,8 +31,8 @@ const Hero = () => {
         </p>
         <div
           className="mt-8 flex flex-wrap items-center justify-center space-x-4"
-          data-aos="fade-up"
-          data-aos-delay="600"
+          // data-aos="fade-up"
+          // data-aos-delay="600"
         >
           <a
             href="#"
@@ -45,7 +46,7 @@ const Hero = () => {
       <figure
         className="x-bg-secondary mx-auto w-full max-w-full rounded-xl p-4 sm:max-w-5xl sm:p-8"
         data-aos="fade-up"
-        data-aos-delay="800"
+        data-aos-delay="400"
       >
         <img src="/hero2.png" alt="Hero" className="w-full" />
       </figure>

@@ -9,17 +9,17 @@ const SuccessStories = () => {
       <div className="px-4 sm:px-6 lg:px-10">
         <div
           className="mx-auto flex w-full max-w-7xl flex-col space-x-0 lg:space-x-10"
-          data-aos="fade-up"
+          data-aos="fade-zoom-in"
         >
           <div
             className="max-w-3xl space-y-2"
-            data-aos="fade-right"
+            data-aos="fade-zoom-in"
             data-aos-delay="200"
           >
             <Badge text="Testimonials" />
             <h1
               className="text-3xl font-semibold text-white sm:text-4xl lg:text-5xl"
-              data-aos="fade-right"
+              data-aos="fade-zoom-in"
               data-aos-delay="400"
             >
               Real Success Stories from
@@ -27,7 +27,7 @@ const SuccessStories = () => {
             </h1>
             <p
               className="mt-4 text-sm text-white sm:text-base"
-              data-aos="fade-right"
+              data-aos="fade-zoom-in"
               data-aos-delay="600"
             >
               Join thousands of entrepreneurs who trust PropelHub!
@@ -36,7 +36,7 @@ const SuccessStories = () => {
             <a
               href={"#"}
               className="mt-8 inline-block"
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="800"
             >
               <Button
@@ -52,7 +52,7 @@ const SuccessStories = () => {
 
       <div
         className="scrollbar-none overflow-auto px-4 sm:px-6 lg:px-10"
-        data-aos="fade-up"
+        data-aos="fade-zoom-in"
         data-aos-delay="1000"
       >
         <div className="mx-auto max-w-7xl">
@@ -60,7 +60,7 @@ const SuccessStories = () => {
             {TESTIMONIALS.map((testimonial, index) => (
               <div
                 key={index}
-                data-aos="fade-up"
+                data-aos="fade-zoom-in"
                 data-aos-delay={`${200 + index * 100}`} // Stagger animations for each testimonial
               >
                 <TestimonialCard {...testimonial} />

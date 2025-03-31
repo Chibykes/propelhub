@@ -7,11 +7,11 @@ const HowItWorks = () => {
     <section className="relative space-y-24 px-6 py-10 sm:px-10">
       <div
         className="mx-auto flex w-full max-w-7xl flex-col space-y-10"
-        data-aos="fade-up"
+        data-aos="fade-zoom-in"
       >
         <div
           className="max-w-2xl space-y-2"
-          data-aos="fade-right"
+          data-aos="fade-zoom-in"
           data-aos-delay="200"
         >
           <Badge
@@ -24,7 +24,7 @@ const HowItWorks = () => {
           </h1>
           <p
             className="mt-4 leading-[140%] tracking-[-0.5px] sm:mt-6 sm:tracking-[-1px]"
-            data-aos="fade-right"
+            data-aos="fade-zoom-in"
             data-aos-delay="400"
           >
             Start your journey in these simple 5 steps
@@ -33,7 +33,7 @@ const HowItWorks = () => {
           <a
             href="#"
             className="mt-4 inline-block sm:mt-6"
-            data-aos="fade-right"
+            data-aos="fade-zoom-in"
             data-aos-delay="600"
           >
             <Button
@@ -47,14 +47,14 @@ const HowItWorks = () => {
 
         <div
           className="flex flex-col gap-8"
-          data-aos="fade-up"
+          data-aos="fade-zoom-in"
           data-aos-delay="200"
         >
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
             <Procedure
               heading={"Create an Account"}
               subheading={"Sign up and complete your business profile"}
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="300"
             >
               <img
@@ -66,7 +66,7 @@ const HowItWorks = () => {
             <Procedure
               heading={"Apply for Services"}
               subheading={"Choose from loans, mentorship, funding, and more."}
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="400"
             >
               <img
@@ -78,7 +78,7 @@ const HowItWorks = () => {
             <Procedure
               heading={"Submit Required Documents!"}
               subheading={"Securely upload necessary details."}
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="500"
             >
               <img
@@ -92,7 +92,7 @@ const HowItWorks = () => {
             <Procedure
               heading={"Track & Manage Applications"}
               subheading={"Get real-time updates."}
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="600"
             >
               <img
@@ -104,7 +104,7 @@ const HowItWorks = () => {
             <Procedure
               heading={"Get Approved & Thrive!"}
               subheading={"Start leveraging PropelHub’s powerful network."}
-              data-aos="fade-up"
+              data-aos="fade-zoom-in"
               data-aos-delay="700"
             >
               <img
